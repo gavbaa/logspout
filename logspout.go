@@ -10,7 +10,10 @@ import (
 
 	"github.com/fsouza/go-dockerclient"
 
-	"github.com/gliderlabs/logspout/router"
+	"github.com/gavbaa/logspout/router"
+
+	_ "github.com/gavbaa/logspout/httpstream"
+	_ "github.com/gavbaa/logspout/routesapi"
 )
 
 var Version string
@@ -36,6 +39,7 @@ func getopt(name, dfault string) string {
 }
 
 func main() {
+	println("yo")
 	if len(os.Args) == 2 && os.Args[1] == "--version" {
 		fmt.Println(Version)
 		os.Exit(0)
