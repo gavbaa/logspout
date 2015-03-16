@@ -1,7 +1,7 @@
 package httpstream
 
 import (
-	"github.com/gliderlabs/logspout/router"
+	"github.com/gavbaa/logspout/router"
 	"github.com/gorilla/mux"
 	"net/http"
 )
